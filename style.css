@@ -1,0 +1,519 @@
+:root {
+    --bg-color: #14120b;
+    --text-white: #edecec;
+    --text-black: #1b1913;
+    --btn-bg-color: #fff;
+    --card-bg-color: #1b1913;
+
+    --border-color: #45433e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "CursorGothic";
+    src:
+        url("./CursorGothic-main/fonts/CursorGothic-Regular.woff2") format("woff2"),
+        url("./CursorGothic-main/fonts/CursorGothic-Bold.woff2") format("woff2"),
+        url("./CursorGothic-main/fonts/CursorGothic-BoldItalic.woff2") format("woff2"),
+        url("./CursorGothic-main/fonts/CursorGothic-Italic.woff2") format("woff2");
+
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'CursorGothic';
+
+}
+
+.navbar {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    font-size: 1rem;
+    color: var(--text-white);
+
+}
+
+.right-section {
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn1 {
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+
+    background-color: #1b1913;
+    color: var(--text-white);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.btn2 {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+
+    background-color: var(--btn-bg-color);
+    color: var(--text-black);
+
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #d7d6d5;
+}
+
+.mid-section {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.logo {
+
+    width: 7rem;
+}
+
+.hero-section {
+    width: 80%;
+    margin: 20px auto;
+
+    font-size: 1.5rem;
+}
+
+.hero-section p {
+
+    color: var(--text-white);
+}
+
+.hero-section button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--text-black);
+    font-size: 1.2rem;
+}
+
+.hero-section img {
+    margin-top: 40px;
+}
+
+.company-logos-section {
+    width: 80%;
+    margin: 40px auto;
+
+
+}
+
+.company-logos-section p {
+    text-align: center;
+    color: var(--text-white);
+}
+
+.logo-rows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.logo-rows img {
+    height: 60px;
+    width: 120px;
+    padding: 20px;
+    border-radius: 5px;
+
+    background-color: var(--card-bg-color);
+
+}
+
+.feature-section {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.block1 {
+    background-color: var(--card-bg-color);
+    display: flex;
+    padding: 20px;
+
+}
+
+.block1 .left-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    font-size: 1.3rem;
+}
+
+.block1 .left-section .child1 {
+    color: var(--text-white);
+
+}
+
+.block1 .left-section .child2 {
+    color: #9a9996
+}
+
+.block1 .left-section .child3 {
+    color: #ff560e;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.block1 .right-section {
+    width: 70%;
+
+}
+
+.block1 .right-section img {
+    width: 100%;
+}
+
+
+.block2 {
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+
+}
+
+.block2 .left-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+
+.block2 .left-section .child1 {
+    color: var(--text-white);
+
+}
+
+.block2 .left-section .child2 {
+    color: #9a9996
+}
+
+.block2 .left-section .child3 {
+    color: #ff560e;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.block2 .right-section {
+    width: 70%;
+
+}
+
+.block2 .right-section img {
+    width: 100%;
+}
+
+.block3 {
+    background-color: var(--card-bg-color);
+    display: flex;
+    padding: 20px;
+
+}
+
+.block3 .left-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    font-size: 1.3rem;
+}
+
+.block3 .left-section .child1 {
+    color: var(--text-white);
+
+}
+
+.block3 .left-section .child2 {
+    color: #9a9996
+}
+
+.block3 .left-section .child3 {
+    color: #ff560e;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.block3 .right-section {
+    width: 70%;
+
+}
+
+.block3 .right-section img {
+    width: 100%;
+}
+
+.feature-cards-section {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 1rem;
+}
+
+.feature-cards-section .child1 {
+    text-align: center;
+    color: var(--text-white);
+    font-size: 1.5rem;
+
+}
+
+.feature-cards-section .row1 .card {
+    margin-top: 50px;
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bottom-part {
+    margin-top: 100px;
+    display: flex;
+    gap: 10px;
+    color: #9a9996;
+}
+
+.bottom-part b {
+    color: var(--text-white);
+}
+
+.feature-cards-section .row1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.testimonials {
+    width: 80%;
+    margin: 50px auto;
+    font-size: 1.1rem;
+    color: var(--text-white);
+
+}
+
+.testimonials .row .card {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    border-radius: 2px;
+
+}
+
+.testimonials .row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.testimonials h1 {
+    font-size: 1.5rem;
+
+}
+
+.testimonials img {
+    border-radius: 5px;
+}
+
+.testimonials .row .child2 {
+    color: #9a9996;
+
+}
+
+.testimonials .row .child3 {
+    color: #ff560e;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.change-log {
+    width: 80%;
+    margin: auto;
+    color: var(--text-white);
+    font-size: 1.5rem;
+}
+
+.log-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.log-cards {
+    height: 60px;
+    background-color: var(--card-bg-color);
+    padding: 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.log-cards :nth-child(2) {
+    margin-top: 15px;
+}
+
+.orange {
+    color: #ff560e;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.team-section {
+
+    width: 80%;
+    margin: 80px auto;
+    color: var(--text-white);
+    font-size: 1.5rem;
+}
+
+.team-section button {
+    margin-top: 30px;
+    width: 120px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 20px;
+    color: var(--text-black);
+    font-size: 1rem;
+}
+
+.team-section img {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.highlight-section {
+    background-color: var(--card-bg-color);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: #26241e;
+    padding: 20px;
+    border-radius: 4px;
+    width: 35rem;
+
+}
+
+.highlight-card :nth-child(1) {
+    color: var(--text-white);
+}
+
+.highlight-card :nth-child(2) {
+    color: #9a9996;
+}
+
+.highlight-card :nth-child(3) {
+    margin-top: 20px;
+    color: #9a9996;
+}
+
+.try-section {
+    background-color: var(--bg-color);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-section h1 {
+    color: var(--text-white);
+    font-size: 4rem;
+}
+
+.try-section button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--text-black);
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: var(--card-bg-color);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    color: var(--text-white);
+
+}
+
+.list-row {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright {
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+    justify-content: space-between;
+}
+
+.copyright .left {
+    gap: 20px;
+    display: flex;
+}
+
+.copyright .right {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright .right .group button {
+    width: 28px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
