@@ -4,8 +4,12 @@
     --text-black: #1b1913;
     --btn-bg-color: #fff;
     --card-bg-color: #1b1913;
-
     --border-color: #45433e;
+
+    --text-grey: #9a9996;
+    --accent-orange: #ff560e;
+    --brown-hover-color:#2e2b23;
+    --white-hover-color:#d7d6d5;
 }
 
 * {
@@ -20,7 +24,6 @@
         url("./CursorGothic-main/fonts/CursorGothic-Bold.woff2") format("woff2"),
         url("./CursorGothic-main/fonts/CursorGothic-BoldItalic.woff2") format("woff2"),
         url("./CursorGothic-main/fonts/CursorGothic-Italic.woff2") format("woff2");
-
     font-style: normal;
     font-display: swap;
 }
@@ -28,8 +31,9 @@
 body {
     background-color: var(--bg-color);
     font-family: 'CursorGothic';
-
 }
+
+/* ===== NAVBAR ===== */
 
 .navbar {
     height: 100px;
@@ -39,20 +43,17 @@ body {
     margin: 15px auto;
     font-size: 1rem;
     color: var(--text-white);
-
 }
 
 .right-section {
     display: flex;
     gap: 10px;
-
 }
 
 .btn1 {
     height: 30px;
     width: 70px;
     border-radius: 20px;
-
     background-color: #1b1913;
     color: var(--text-white);
     border: 1px solid var(--border-color);
@@ -63,10 +64,8 @@ body {
     height: 30px;
     width: 100px;
     border-radius: 20px;
-
     background-color: var(--btn-bg-color);
     color: var(--text-black);
-
     cursor: pointer;
 }
 
@@ -79,23 +78,21 @@ body {
     justify-content: center;
     list-style: none;
     gap: 20px;
-
 }
 
 .logo {
-
     width: 7rem;
 }
+
+/* ===== HERO ===== */
 
 .hero-section {
     width: 80%;
     margin: 20px auto;
-
     font-size: 1.5rem;
 }
 
 .hero-section p {
-
     color: var(--text-white);
 }
 
@@ -112,11 +109,11 @@ body {
     margin-top: 40px;
 }
 
+/* ===== COMPANY LOGOS ===== */
+
 .company-logos-section {
     width: 80%;
     margin: 40px auto;
-
-
 }
 
 .company-logos-section p {
@@ -136,10 +133,14 @@ body {
     width: 120px;
     padding: 20px;
     border-radius: 5px;
-
     background-color: var(--card-bg-color);
 
 }
+.logo-rows img:hover{
+    background-color: var(--brown-hover-color);
+}
+
+/* ===== FEATURE BLOCKS ===== */
 
 .feature-section {
     width: 80%;
@@ -147,97 +148,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: 80px;
-
 }
 
-.block1 {
+.block1, .block3 {
     background-color: var(--card-bg-color);
     display: flex;
     padding: 20px;
-
+    
 }
-
-.block1 .left-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    font-size: 1.3rem;
+.feature-section > *:hover{
+    background-color: var(--brown-hover-color);
 }
-
-.block1 .left-section .child1 {
-    color: var(--text-white);
-
-}
-
-.block1 .left-section .child2 {
-    color: #9a9996
-}
-
-.block1 .left-section .child3 {
-    color: #ff560e;
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-.block1 .right-section {
-    width: 70%;
-
-}
-
-.block1 .right-section img {
-    width: 100%;
-}
-
 
 .block2 {
     background-color: var(--card-bg-color);
     display: flex;
     flex-direction: row-reverse;
     padding: 20px;
-
 }
 
-.block2 .left-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    font-size: 1.3rem;
-    padding-left: 20px;
-}
-
-.block2 .left-section .child1 {
-    color: var(--text-white);
-
-}
-
-.block2 .left-section .child2 {
-    color: #9a9996
-}
-
-.block2 .left-section .child3 {
-    color: #ff560e;
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-.block2 .right-section {
-    width: 70%;
-
-}
-
-.block2 .right-section img {
-    width: 100%;
-}
-
-.block3 {
-    background-color: var(--card-bg-color);
-    display: flex;
-    padding: 20px;
-
-}
-
+.block1 .left-section,
+.block2 .left-section,
 .block3 .left-section {
     display: flex;
     justify-content: center;
@@ -246,29 +177,31 @@ body {
     font-size: 1.3rem;
 }
 
-.block3 .left-section .child1 {
-    color: var(--text-white);
-
+.block2 .left-section {
+    padding-left: 20px;
 }
 
-.block3 .left-section .child2 {
-    color: #9a9996
-}
-
-.block3 .left-section .child3 {
-    color: #ff560e;
+.child1 { color: var(--text-white); }
+.child2 { color: var(--text-grey); }
+.child3 {
+    color: var(--accent-orange);
     font-size: 1rem;
     margin-top: 10px;
 }
 
+.block1 .right-section,
+.block2 .right-section,
 .block3 .right-section {
     width: 70%;
-
 }
 
+.block1 .right-section img,
+.block2 .right-section img,
 .block3 .right-section img {
     width: 100%;
 }
+
+/* ===== FEATURE CARDS ===== */
 
 .feature-cards-section {
     width: 80%;
@@ -280,7 +213,12 @@ body {
     text-align: center;
     color: var(--text-white);
     font-size: 1.5rem;
+}
 
+.feature-cards-section .row1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .feature-cards-section .row1 .card {
@@ -295,30 +233,30 @@ body {
     border-radius: 5px;
 }
 
+
 .bottom-part {
     margin-top: 100px;
     display: flex;
     gap: 10px;
-    color: #9a9996;
+    color: var(--text-grey);
 }
 
 .bottom-part b {
     color: var(--text-white);
 }
 
-.feature-cards-section .row1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
+/* ===== TESTIMONIALS ===== */
 
 .testimonials {
     width: 80%;
     margin: 50px auto;
     font-size: 1.1rem;
     color: var(--text-white);
+}
 
+.testimonials .row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .testimonials .row .card {
@@ -329,18 +267,13 @@ body {
     background-color: var(--card-bg-color);
     padding: 10px;
     border-radius: 2px;
-
 }
-
-.testimonials .row {
-    display: flex;
-    justify-content: space-between;
-
+.testimonials .row .card:hover{
+    background-color: var(--brown-hover-color);
 }
 
 .testimonials h1 {
     font-size: 1.5rem;
-
 }
 
 .testimonials img {
@@ -348,16 +281,17 @@ body {
 }
 
 .testimonials .row .child2 {
-    color: #9a9996;
-
+    color: var(--text-grey);
 }
 
 .testimonials .row .child3 {
-    color: #ff560e;
+    color: var(--accent-orange);
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1rem;
 }
+
+/* ===== CHANGE LOG ===== */
 
 .change-log {
     width: 80%;
@@ -380,19 +314,23 @@ body {
     font-size: 1rem;
     border-radius: 5px;
 }
+.log-cards:hover{
+    background-color: var(--brown-hover-color);
+}
 
 .log-cards :nth-child(2) {
     margin-top: 15px;
 }
 
 .orange {
-    color: #ff560e;
+    color: var(--accent-orange);
     font-size: 1rem;
     margin-top: 20px;
 }
 
-.team-section {
+/* ===== TEAM ===== */
 
+.team-section {
     width: 80%;
     margin: 80px auto;
     color: var(--text-white);
@@ -414,6 +352,8 @@ body {
     border-radius: 5px;
 }
 
+/* ===== HIGHLIGHT ===== */
+
 .highlight-section {
     background-color: var(--card-bg-color);
     padding: 50px;
@@ -429,21 +369,25 @@ body {
     padding: 20px;
     border-radius: 4px;
     width: 35rem;
-
+}
+.highlight-card:hover{
+    background-color: var(--brown-hover-color);
 }
 
 .highlight-card :nth-child(1) {
     color: var(--text-white);
 }
 
-.highlight-card :nth-child(2) {
-    color: #9a9996;
+.highlight-card :nth-child(2),
+.highlight-card :nth-child(3) {
+    color: var(--text-grey);
 }
 
 .highlight-card :nth-child(3) {
     margin-top: 20px;
-    color: #9a9996;
 }
+
+/* ===== TRY SECTION ===== */
 
 .try-section {
     background-color: var(--bg-color);
@@ -468,14 +412,17 @@ body {
     font-size: 1.2rem;
 }
 
+.try-section button:hover{
+    background-color: var(--white-hover-color);
+}
+/* ===== FOOTER ===== */
+
 footer {
     background-color: var(--card-bg-color);
     height: 400px;
     display: flex;
     flex-direction: column;
-
     color: var(--text-white);
-
 }
 
 .list-row {
@@ -492,11 +439,21 @@ ol {
     gap: 10px;
 }
 
+.list-row ol li {
+    cursor: pointer;
+}
+
+.list-row ol :nth-child(1) {
+    color: var(--text-grey);
+    cursor: auto;
+}
+
+/* ===== COPYRIGHT ===== */
+
 .copyright {
     display: flex;
     width: 80%;
     margin: auto;
-
     justify-content: space-between;
 }
 
@@ -516,12 +473,4 @@ ol {
     outline: none;
     border: none;
     color: white;
-}
-.list-row ol li{
-    cursor: pointer;
-}
-.list-row ol :nth-child(1){
-    color: #9a9996;
-    cursor:auto;
-
 }
