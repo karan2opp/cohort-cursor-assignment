@@ -36,18 +36,26 @@ body {
 /* ===== NAVBAR ===== */
 
 .navbar {
-    height: 100px;
+    position: fixed;
+    left: 10%;
+    top: 0px;
+    height: 40px;
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: auto;
     font-size: 1rem;
     color: var(--text-white);
+    background-color: var(--bg-color);
+    border-radius: 2px;
+    padding-top: 15px;
+    
 }
 
 .right-section {
     display: flex;
     gap: 10px;
+    padding-right: 18px;
 }
 
 .btn1 {
@@ -88,7 +96,7 @@ body {
 
 .hero-section {
     width: 80%;
-    margin: 20px auto;
+    margin: 100px auto;
     font-size: 1.5rem;
 }
 
