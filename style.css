@@ -517,3 +517,11 @@ ol {
     border: none;
     color: white;
 }
+.list-row ol li{
+    cursor: pointer;
+}
+.list-row ol :nth-child(1){
+    color: #9a9996;
+    cursor:auto;
+
+}
